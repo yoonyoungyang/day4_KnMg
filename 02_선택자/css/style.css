@@ -45,3 +45,147 @@
 .menu > li > a{
     background-color: #aff;
 }
+
+.menu > li > ul > li > a {
+    background-color: #ddd;
+}
+/* 자손선택자 */
+.menu a.detail{
+    color: #fff;
+}
+
+/* 인접 선택자 */
+.cur_page + li{
+    background-color: #faa;
+}
+.cur_page + li + li{
+    background-color: #afa;
+}
+
+.cur_page + li + li + li{
+    background-color: darkmagenta;
+}
+
+.cur_page + li + li + li a{
+    color: #fff;
+}
+/* -는 없음 */
+.target_page + li {
+    border: 2px solid #f00;
+}
+
+/* 내림 형제 선택자 */
+.current ~ .partner{
+    background-color: #aaf;
+}
+
+/* 복수(병렬)선택자 */
+.several_selector p, .several_selector h5{
+    font-size: 24px;
+}
+.several_selector p, h5 {
+    background-color: #faa;
+}
+.several_selector p, .target_lang{
+    color: #09f;
+}
+
+/* 가상 공간 선택자 */
+.virtual_space::before{
+    content: '맛있는 ';
+}
+.virtual_space::after{
+    content: ' : 마라탕';
+}
+
+.change_bg{
+    width: 240px;
+    height: 240px;
+    background-color: #ff7;
+    transition: 0.5s;
+}
+.change_bg:hover{
+    background-color: #f77;
+}
+.com_menu > li > a{
+    color: #777;
+    text-decoration: none;
+}
+
+.com_menu > li > a:hover{
+    color: #faa;
+    border-bottom: 1px solid #faa;
+}
+
+/* 링크 관련 가상 행동 선택자 */
+.a_focus{color: red;}
+
+.a_focus:focus{
+    color: orange;
+}
+/* (웹접근성 차원에서 작성요구됨) */
+
+.a_active:active{
+    color: red;
+}
+
+/* <>각괄호
+()소괄호
+{}중괄호
+[]대괄호 */
+
+
+
+/* 속성(attribute) 선택자 */
+.attr_selector1 [type]{
+    background-color: #ffc;
+
+}
+.attr_selector1 [type="password"]{
+    border: 2px solid #f0f;
+}
+.attr_selector1 [type^="e"]{
+    height: 40px;
+}
+.attr_selector1 [type$="t"]{
+    border-radius: 8px;
+}
+
+.attr_selector1 [type*="ss"]{
+    background-color: #00f;
+    color: #fff;
+}
+
+.attr_selector2 p[class^='des']{
+    color: #f70;
+}
+.attr_selector2 p[class*='des']{
+    background-color: #fcf;
+}
+/* fz24 */
+.attr_selector2 p[class$='et']{
+    font-size: 24px;
+}
+
+/* 수도 선택자 */
+.nth_selector li:nth-child(2){
+    color: red;
+}
+
+.nth_selector li:first-child{
+    background-color: #cff;
+}
+.nth_selector li:last-child{
+    background-color: #fcf;
+}
+
+.nth_selector li:nth-of-type(3){
+    color: green;
+}
+
+.nth_selector li:first-of-type{
+    border-top: 4px solid blue;
+}
+.nth_selector li:last-of-type{
+    border-bottom: 4px solid red;
+}
