@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>02_CSS_선택자</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <h2>선택자</h2>
-    <h3>전체 선택자 : *</h3>
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>02_CSS_선택자</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <h2>선택자</h2>
+        <h3>전체 선택자(*) : 문서상에 존재하는 모든 태그에 스타일을 적용</h3>
+        <h3>태그 선택자(요소명) : 각괄호(<요소명>) 내부의 첫 선언 요소명을 기준으로 
+            스타일 적용시 사용</h3>
+
+        <h3>클래스 선택자(.클래스명) : 태그 내부에 클래스(class) 속성을 추가하여
+            그 속성이 담고 있는 속성값을 기준으로 스타일을 선언하고자 할 때 사용</h3>
+
+        <div class="class_selector">
+            <p class="1_num">바람과 함께 사라지다</p>
+            <p class="hit">아몬드 봉봉</p>
+            <p class="fav_ice">엄마는 외계인</p>
+            <!-- class 지정할 때 순서는 상관 X, css 파일 내부 순서가 중요 -->
+            <p class="select_ice hit">민트초코</p>
+            <p class="슈팅 스타">슈팅스타</p>
+            
+
+        </div>
+        <h4>클래스 선택자 선언시 주의사항</h4>
+        <p>1. 클래스명을 선언시 첫글자는 숫자 불가(단, 영문 이후에 포함되는 숫자는 상관 없음)</p>
+        <p>2. 클래스명은 복수의 클래스명으로 선언이 가능(복수 선언시, 반드시 한 칸을 띄우고 작성한다.)</p>
+        <p>3. 클래스명 선언시, 반드시 의미있는 이름으로 지어주는 것이 중요(인수인계시 중요)</p>
+        <p>4. 클래스명으로 두 단어를 연결 시, 단어_단어 또는 wordWord</p>
+        <p>5. 클래스명은 재활용이 가능(<->아이디 선택자)</p>
+        
+        <h3>아이디 선택자(#아이디명) : 태그 내부에 id라는 속성을 선언하여 아이디명을 기준으로
+            스타일을 적용하고자 할 때 사용</h3>
+        <!-- <div class="className">.className</div>
+        <p class="txt">p.txt</p>
+        <p id="idNum">p#idNum</p> -->
+
+        <div id="id_selector">
+            <p id="txt_id">산타페</p>
+            <p id="id_2">아반떼</p>
+            <p id="txt_id">카니발</p>
+        </div>
+
+        <h4>아이디 선택자 선언 시 주의사항</h4>
+        <p>1. 아이디명을 선언 시 첫 글자는  숫자 불가(단, 영문 이후에 포함되는 숫자는 상관 없음)</p>
+        <p>2. 아이디명은 복수의 아이디명의 선언이 불가능</p>
+        <p>3. 아이디명 선언 시, 반드시 의미있는 이름으로 지어주는 것이 중요(인수인계시 중요)</p>
+        <p>4. 아이디명으로 두 단어를 연결 시, 단어_단어 또는 wordWord</p>
+        <p>5. 아이디명은 재활용이 불가능( css상에서는 스타일 적용이 되나, js에서는 첫번째 선언된
+            아이디명에만 동적 적용이 가능)
+        </p>
+        <p>6. 아이디 선택자는 구조상 큰 규모를 대상으로 작성하는 것이 좋다. (명시도 부분에서
+            1개의 아이디당 100점)</p>
+
+        <h3>자식선택자(부모 > 자식) / 자손선택자(조상 후손)</h3>
+        <ul class="menu">
+            <li>
+                <a href="">회사 소개</a>
+            </li>
+            <li>
+                <a href="">경영 소개</a>
+            </li>
+            <li>
+                <a href="">제품 소개</a>
+            </li>
+            <li>
+                <a href="">고객 센터</a>
+            </li>
+        </ul>
+
+
+
+
+    </body>
+    </html>

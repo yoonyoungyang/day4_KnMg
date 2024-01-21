@@ -1,4 +1,47 @@
 @charset "utf-8";
 
 /* 전체 선택자 */
-*{color: orange;}
+/* *{color: orange;} */
+
+/* 태그 선택자 */
+/* h3{color: blueviolet;} */
+
+/* 클래스 선택자 */
+.class_selector{
+    background-color: #f50;
+}
+
+.hit{
+    color: #00f;
+}
+
+.select_ice{
+    color: mintcream;
+}
+
+.num_1{
+    color: red;
+}
+
+.슈팅{
+    color: chartreuse;
+}
+/* 한글은 사용 가능하나 사용 안 함, 숫자로 클래스 시작 불가능 */
+
+.스타{
+    background-color: #ccc;
+}
+
+/* 아이디 선택자 */
+#txt_id{font-size: 20px;}
+#id_2{color:darkorange;}
+#car{background-color: #faf;}
+
+/* 자식선택자 */
+.menu > li {
+    background-color: #ffa;
+}
+
+.menu > li > a{
+    background-color: #aff;
+}
