@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>04_CSS_구성하기_문법편</title>
+        <style>
+            /* !important는 이게 제일 중요하다는 의미.-> 이 스타일로 다 적용됨. 남발해서는 안 됨!! 
+            style은 head안에 있는 것이 원칙이나 다른 곳에 있으면 위에서부터 읽었을 때 불편함 -> 대기 인자
+            가장 마지막에 작성된 것으로 덮어쓰기됨 -> style과 link의 순서가 중요*/
+            p {
+                color: #f00;
+                background-color: #aff;
+            }
+        </style>
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+        <h2>스타일 시트의 종류</h2>
+        <h3>인라인 스타일 시트</h3>
+        <!-- :는 는, ;는 마침표 라고 생각/ 가장 빠르게 적용(문신이라고 생각) -->
+        <p style="color: #0000ff;background-color: #ff9;">인라인 스타일 시트 : 태그 내부에서 
+            style이라는 속성을 선언하여 그 내부에 스타일 선언명과 선언값을 각 태그마다 적용하고자 할 때
+             사용</p>
+
+        <h3>내부 스타일 시트</h3>
+        <p>내부 스타일시트 : HTML문서 내부에 style 태그를 선언하여 해당하는 선택자에 스타일을 
+            적용하고자 할 때 사용</p>
+
+        <h3>외부 스타일 시트</h3>
+        <p>외부 스타일 시트 : HTML 문서 외부에 별도의 스타일을 선언하는 문서를 구성하여 
+            스타일을 적용하고자 할 때 사용</p>
+        <h3>스타일 시트의 우선 순위</h3>
+        <p>인라인 스타일시트 > 내부 또는 외부 스타일 시트(내부 및 외부의 우선순위는 마지막에 작성된 스타일의
+            영향을 받는다. 기준은 HTML 문서 상에서)</p>
+    </body>
+</html>
