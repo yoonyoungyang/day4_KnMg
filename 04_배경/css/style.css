@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.bg_image_01{
+    width: 200px;
+    height: 200px;
+    background-color: #fcc;
+    background-image: url(../img/university_01.jpg);
+
+}
+.bg_image_02{
+    width: 200px;
+    height: 200px;
+    background-color: #fcc;
+    background-image: url(../img/university_01.jpg);
+    background-position: 50% 50%;
+}
+.bg_image_03{
+    width: 200px;
+    height: 200px;
+    background-color: #fcc;
+    background-image: url(../img/university_01.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.bg_image_04{
+    width: 200px;
+    height: 200px;
+    background-color: #fcc;
+    background-image: url(../img/jan.png);
+    background-position: 50% 50%;
+    background-size: contain;
+}
+.bg_image_05{
+    width: 100%;
+    height: 200px;
+    background-color: #aff;
+    background-image: url(../img/snoopy.png);
+    background-size: 20px;
+    /* background-size: 20px auto; 같은 말임 / auto는 생략 후 20px은 가로를 뜻함*/
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-position: 50% 50%;
+}
+.bg_attach{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 600px;
+    background-image: url(../img/wallpaper.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
